@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>PETFAX™ | Adopt, Adore, Cherish, & Gush over Cute and Furries</title>
 </head>
 <body>
@@ -10,7 +11,8 @@
     {% for pet in pets %}
     <h2>{{ pet.pet_name }}</h2>
     <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
-{% endfor %}
+    <p>{{ pet.pet_fact }}</p>
+    {% endfor %}
 </body>
 </html>
 

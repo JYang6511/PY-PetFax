@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFax | Adoptable Pet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="pets">
+        <h1>This is: {{ pet.pet_name }}</h1>
+        <img src="{{ pet.pet_photo }}" alt="Photo of pet" />
+        <br />
+        <p>Fun Facts:</p>
+        <p>{{ pet.pet_fact }}</p>
+        <br />
+        <a href="/pets">Go back to Pets</a>
+    </div>
+</body>
+</html>
