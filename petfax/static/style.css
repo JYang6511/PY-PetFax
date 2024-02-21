@@ -1,4 +1,18 @@
 body {
     background: green;  
-    background-color:red;
+    background-color:rgb(190, 241, 143);
+}
+
+.container {
+    width: 70%;
+    margin: 2em auto;
+    padding: 1em 3em 3em 3em;
+    border-radius: 1em;
+    background: white;
+    box-shadow: 2px 2px #ddd;
+    height: 50px;
+}
+
+img {
+    width: 400px;
 }
