@@ -7,5 +7,14 @@
 </head>
 <body>
     <h1>UserFax</h1>
+    <H1>UserFax</H1>
+    {% for fact in facts %}
+        <H4>Submitted by {{ fact.submitter }}</H4>
+        {{ fact.fact }}
+    {% endfor %}
+    <div>
+    <a href="/facts/new">Add a new fact</a>
+    <a href="/pets">Go back to Pets</a>
+    </div>
 </body>
 </html>
